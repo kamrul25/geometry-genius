@@ -24,7 +24,7 @@
   <body class="w-11/12 mx-auto">
 
     <header>
-        <nav class="mt-12 bg-slate-200 rounded-lg flex  flex-row justify-between items-center  md:py-4 md:px-9">
+        <nav class="mt-12 bg-slate-200  rounded-lg flex  flex-row justify-between items-center  md:py-4 md:px-9">
             <div>
                 <h2> <span class=" md:text-[45px] font-bold text-black">Interactive</span> <br> <span class="md:text-2xl font-medium text-gray-400">Geometry Genius</span></h2>
             </div>
@@ -33,6 +33,30 @@
             </div>
         </nav>
     </header>
+
+    <main>
+        <section>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/triangle.png" alt="Triangle" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-black">Triangle</h2>
+                      <p class="text-black">Area (A) = 0.5 x b x h</p>
+                       <div class=" w-1/2 mx-auto mt-2 mb-2">
+                        <input id="triangle-first-feild" type="text" placeholder="b" class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-20"> <span class="text-black text-lg ml-2">cm</span>
+                        <input  id="triangle-second-feild" type="text" placeholder="h" class="bg-[#F1F1F1] text-black  border border-white rounded px-3 py-2  w-20"> <span class="text-black text-lg ml-2">cm</span>
+                       </div>
+                      <div class="card-actions ">
+                        <button id="triangle-btn" class="bg-blue-500  text-white md:text-xl py-2 px-8 font-bold border-none rounded-lg w-80  h-14 ">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+        </section>
+    </main>
 
     <!-- JavaScript -->
     <script src="./js/blog.js"></script>
