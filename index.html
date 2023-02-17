@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <title>Geometry Genius</title>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
@@ -11,10 +14,25 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            font-family: 'Inter', sans-serif;
+           color: #1090d81a ;
+        }
+    </style>
   </head>
   <body class="w-11/12 mx-auto">
 
-   
+    <header>
+        <nav class="mt-12 bg-slate-200 rounded-lg flex  flex-row justify-between items-center  md:py-4 md:px-9">
+            <div>
+                <h2> <span class=" md:text-[45px] font-bold text-black">Interactive</span> <br> <span class="md:text-2xl font-medium text-gray-400">Geometry Genius</span></h2>
+            </div>
+            <div>
+               <button id="blog-btn" class="bg-blue-500 text-white md:text-xl py-2 px-8 font-bold border-none rounded-lg w-28 h-11">Blog</button>
+            </div>
+        </nav>
+    </header>
 
     <!-- JavaScript -->
     <script src="./js/blog.js"></script>
