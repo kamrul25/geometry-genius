@@ -1,17 +1,13 @@
-// get the title text by function
-function getElementTextValueById(textId){
-    const textValue = document.getElementById(textId).innerText;
-    return textValue;
-}
+
 
 // calculate triangle , rectangle and rhombus area by function
-function calculateTriangleOrRhombusOrPentagon(firstElement, secondElement){
+function calculateTriangleOrRhombusOrPentagon(firstElement, secondElement ,textId){
     const firstValueString = document.getElementById(firstElement).value ;
     const secondValueString = document.getElementById(secondElement).value ;
-    
+ 
     firstValueString.value = '';
     secondValueString.value = '';
-    if(firstValueString <0 ||  secondValueString < 0  ||isNaN(firstValueString)  || isNaN(secondValueString)){
+    if(firstValueString <0 ||  secondValueString < 0 || firstValueString == ''|| secondValueString == ''  ||isNaN(firstValueString)  || isNaN(secondValueString)){
         alert('Please give a positive number');
          return;
     }
@@ -19,19 +15,20 @@ function calculateTriangleOrRhombusOrPentagon(firstElement, secondElement){
         const firstValue = parseFloat(firstValueString); 
         const secondValue = parseFloat( secondValueString);
         const areaValue = (0.5 * firstValue * secondValue).toFixed(2);
-        return areaValue ;
+        const textValue = document.getElementById(textId).innerText;
+        return displayData(textValue, areaValue);
     }
 
 }
 
 // calculate rectangle and parallelogram area by function
-function calculateRectangleOrParallelogram(firstElement, secondElement){
+function calculateRectangleOrParallelogram(firstElement, secondElement, textId){
     const firstValueString = document.getElementById(firstElement).value ;
     const secondValueString = document.getElementById(secondElement).value ; 
     
     firstValueString.value = '';
     secondValueString.value = '';
-    if(firstValueString <0 ||  secondValueString < 0  ||isNaN(firstValueString)  || isNaN(secondValueString)){
+    if(firstValueString <0 ||  secondValueString < 0 || firstValueString == ''|| secondValueString == ''  ||isNaN(firstValueString)  || isNaN(secondValueString)){
         alert('Please give a positive number');
          return;
     }
@@ -39,26 +36,28 @@ function calculateRectangleOrParallelogram(firstElement, secondElement){
         const firstValue = parseFloat(firstValueString); 
         const secondValue = parseFloat( secondValueString);
         const areaValue = ( firstValue * secondValue).toFixed(2);
-        return areaValue ;
+        const textValue = document.getElementById(textId).innerText;
+        return displayData(textValue, areaValue);
     }
 }
 
 // calculate ellipse area by function
-function calculateEllipse(firstElement, secondElement){
+function calculateEllipse(firstElement, secondElement,textId){
     const firstValueString = document.getElementById(firstElement).value ;
     const secondValueString = document.getElementById(secondElement).value ;
     
     firstValueString.value = '';
     secondValueString.value = '';
-    if(firstValueString <0 ||  secondValueString < 0  ||isNaN(firstValueString)  || isNaN(secondValueString)){
+    if(firstValueString <0 ||  secondValueString < 0 || firstValueString == ''|| secondValueString == ''  ||isNaN(firstValueString)  || isNaN(secondValueString)){
         alert('Please give a positive number');
          return;
     }
     else{
         const firstValue = parseFloat(firstValueString); 
         const secondValue = parseFloat( secondValueString);
-        const areaValue = (3.14 * firstValue * secondValue).toFixed(2);
-        return areaValue ;
+        const areaValue = (0.5 * firstValue * secondValue).toFixed(2);
+        const textValue = document.getElementById(textId).innerText;
+        return displayData(textValue, areaValue);
     }
 }
 
