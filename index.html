@@ -52,262 +52,300 @@
     <main class="mt-12 mb-12">
       <section class="md:flex justify-between gap-2">
         <div class="md:w-[70%]">
-          <div  class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-
-            <div id="random-color" class="card w-full bg-base-100 shadow-xl">
-              <figure class="px-10 pt-10 ">
-                <img
-                  src="./images/triangle.png"
-                  alt="Triangle"
-                  class="rounded-xl w-full"
-                />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 id="triangle-name" class="card-title text-black">Triangle</h2>
-                <p class="text-black">Area (A) = 0.5 x b x h</p>
-                <div class="mx-auto  mb-2">
-                  <input
-                    id="triangle-first-field"
-                    type="text"
-                    placeholder="b"
-                    class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px] "
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div id="random-triangle" class="random">
+              <div id="random-color" class="card w-full bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/triangle.png"
+                    alt="Triangle"
+                    class="rounded-xl w-full"
                   />
-                  <span class="text-black text-lg ">cm</span>
-                  <input
-                    id="triangle-second-field"
-                    type="text"
-                    placeholder="h"
-                    class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
-                  />
-                  <span class="text-black text-lg ">cm</span>
-                </div>
-                <div class="card-actions">
-                  <button
-                    id="triangle-btn"
-                    class="bg-blue-500 text-white md:text-xl py-2 px-8 font-bold border-none rounded-lg w-72 h-14"
-                  >
-                    Calculate
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="card w-full bg-base-100 shadow-xl">
-              <figure class="px-10 pt-10">
-                <img
-                  src="./images/rectangle.png"
-                  alt="Rectangle"
-                  class="rounded-xl"
-                />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 id="rectangle-name" class="card-title text-black mt-7">Rectangle</h2>
-                <p class="text-black">Area (A) =  w x l</p>
-                <div class="mx-auto  mb-2">
-                  <input
-                    id="rectangle-first-field"
-                    type="text"
-                    placeholder="w"
-                    class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
-                  />
-                  <span class="text-black text-lg ">cm</span>
-                  <input
-                    id="rectangle-second-field"
-                    type="text"
-                    placeholder="l"
-                    class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
-                  />
-                  <span class="text-black text-lg ">cm</span>
-                </div>
-                <div class="card-actions">
-                  <button
-                    id="rectangle-btn"
-                    class="bg-blue-500 text-white md:text-xl py-2 px-8 font-bold border-none rounded-lg w-72 h-14"
-                  >
-                    Calculate
-                  </button>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 id="triangle-name" class="card-title text-black">
+                    Triangle
+                  </h2>
+                  <p class="text-black">Area (A) = 0.5 x b x h</p>
+                  <div class="mx-auto mb-2">
+                    <input
+                      id="triangle-first-field"
+                      type="text"
+                      placeholder="b"
+                      class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
+                    />
+                    <span class="text-black text-lg">cm</span>
+                    <input
+                      id="triangle-second-field"
+                      type="text"
+                      placeholder="h"
+                      class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
+                    />
+                    <span class="text-black text-lg">cm</span>
+                  </div>
+                  <div class="card-actions">
+                    <button
+                      id="triangle-btn"
+                      class="bg-blue-500 text-white md:text-xl py-2 px-8 font-bold border-none rounded-lg w-72 h-14"
+                    >
+                      Calculate
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="card w-full bg-base-100 shadow-xl">
-              <figure class="px-10 pt-10">
-                <img
-                  src="./images/parallelogram.png"
-                  alt="Parallelogram"
-                  class="rounded-xl"
-                />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 id="parallelogram-name" class="card-title text-black mt-7">Parallelogram</h2>
-                <p class="text-black">Area (A) = b x h</p>
-                <p class="text-black">b = 10cm , <span class="text-black">h = 12cm</span></p>
-                <div class="mx-auto mb-2">
-                  <input
-                    id="parallelogram-first-field"
-                    type="text"
-                    placeholder="b=10" 
-                    class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
+            <div id="random-rectangle" class="random">
+              <div class="card w-full bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/rectangle.png"
+                    alt="Rectangle"
+                    class="rounded-xl"
                   />
-                  <span class="text-black text-lg ">cm</span>
-                  <input
-                    id="parallelogram-second-field"
-                    type="text"
-                    placeholder="h=12"
-                    class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
-                  />
-                  <span class="text-black text-lg ">cm</span>
-                </div>
-                <div class="card-actions">
-                  <button
-                    id="parallelogram-btn"
-                    class="bg-blue-500 text-white md:text-xl py-2 px-8 font-bold border-none rounded-lg w-72 h-14"
-                  >
-                    Calculate
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="card w-full bg-base-100 shadow-xl">
-              <figure class="px-10 pt-10">
-                <img
-                  src="./images/rhombus.png"
-                  alt="Rhombus"
-                  class="rounded-xl"
-                />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 id="rhombus-name" class="card-title text-black mt-7">Rhombus</h2>
-                <p class="text-black">Area (A) = 0.5 x d<sub class="text-black">1</sub> x d<sub class="text-black">2</sub></p>
-                <p class="text-black">d<sub class="text-black">1</sub>= 16cm  ,  d<sub class="text-black">2</sub>= 8cm</p>
-                <div class="mx-auto  mb-2">
-                  <input
-                    id="rhombus-first-field"
-                    type="text"
-                    placeholder="16"
-                    class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
-                  />
-                  <span class="text-black text-lg ">cm</span>
-                  <input
-                    id="rhombus-second-field"
-                    type="text"
-                    placeholder="8"
-                    class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
-                  />
-                  <span class="text-black text-lg ">cm</span>
-                </div>
-                <div class="card-actions">
-                  <button
-                    id="rhombus-btn"
-                    class="bg-blue-500 text-white md:text-xl py-2 px-8 font-bold border-none rounded-lg w-72 h-14"
-                  >
-                    Calculate
-                  </button>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 id="rectangle-name" class="card-title text-black mt-7">
+                    Rectangle
+                  </h2>
+                  <p class="text-black">Area (A) = w x l</p>
+                  <div class="mx-auto mb-2">
+                    <input
+                      id="rectangle-first-field"
+                      type="text"
+                      placeholder="w"
+                      class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
+                    />
+                    <span class="text-black text-lg">cm</span>
+                    <input
+                      id="rectangle-second-field"
+                      type="text"
+                      placeholder="l"
+                      class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
+                    />
+                    <span class="text-black text-lg">cm</span>
+                  </div>
+                  <div class="card-actions">
+                    <button
+                      id="rectangle-btn"
+                      class="bg-blue-500 text-white md:text-xl py-2 px-8 font-bold border-none rounded-lg w-72 h-14"
+                    >
+                      Calculate
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="card w-full bg-base-100 shadow-xl">
-              <figure class="px-10 pt-10">
-                <img
-                  src="./images/pentagon.png"
-                  alt="Pentagon"
-                  class="rounded-xl"
-                />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2  id="pentagon-name" class="card-title text-black">Pentagon</h2>
-                <p class="text-black">Area (A) = 0.5 x p x b</p>
-                <p class="text-black">p = 6cm , b = 10cm</p>
-                <div class="mx-auto  mb-2">
-                  <input
-                    id="pentagon-first-field"
-                    type="text"
-                    placeholder="p=6"
-                    class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
+            <div id="random-parallelogram" class="random">
+              <div class="card w-full bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/parallelogram.png"
+                    alt="Parallelogram"
+                    class="rounded-xl"
                   />
-                  <span class="text-black text-lg ">cm</span>
-                  <input
-                    id="pentagon-second-field"
-                    type="text"
-                    placeholder="b=10"
-                    class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
-                  />
-                  <span class="text-black text-lg ">cm</span>
-                </div>
-                <div class="card-actions">
-                  <button
-                    id="pentagon-btn"
-                    class="bg-blue-500 text-white md:text-xl py-2 px-8 font-bold border-none rounded-lg w-72 h-14"
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2
+                    id="parallelogram-name"
+                    class="card-title text-black mt-7"
                   >
-                    Calculate
-                  </button>
+                    Parallelogram
+                  </h2>
+                  <p class="text-black">Area (A) = b x h</p>
+                  <p class="text-black">
+                    b = 10cm , <span class="text-black">h = 12cm</span>
+                  </p>
+                  <div class="mx-auto mb-2">
+                    <input
+                      id="parallelogram-first-field"
+                      type="text"
+                      placeholder="b=10"
+                      class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
+                    />
+                    <span class="text-black text-lg">cm</span>
+                    <input
+                      id="parallelogram-second-field"
+                      type="text"
+                      placeholder="h=12"
+                      class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
+                    />
+                    <span class="text-black text-lg">cm</span>
+                  </div>
+                  <div class="card-actions">
+                    <button
+                      id="parallelogram-btn"
+                      class="bg-blue-500 text-white md:text-xl py-2 px-8 font-bold border-none rounded-lg w-72 h-14"
+                    >
+                      Calculate
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="card w-full bg-base-100 shadow-xl">
-              <figure class="px-10 pt-10">
-                <img
-                  src="./images/ellipse.png"
-                  alt="Ellipse"
-                  class="rounded-xl"
-                />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 id="ellipse-name" class="card-title text-black mt-10">Ellipse</h2>
-                <p class="text-black ">Area (A) = &pi;ab</p>
-                <p class="text-black ">a = 10cm, b = 4cm</p>
-                <div class="mx-auto mb-2">
-                  <input
-                    id="ellipse-first-field"
-                    type="text"
-                    placeholder="a=10"
-                    class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
+            <div id="random-rhombus" class="random">
+              <div class="card w-full bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/rhombus.png"
+                    alt="Rhombus"
+                    class="rounded-xl"
                   />
-                  <span class="text-black text-lg">cm</span>
-                  <input
-                    id="ellipse-second-field"
-                    type="text"
-                    placeholder="b=4"
-                    class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
-                  />
-                  <span class="text-black text-lg">cm</span>
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 id="rhombus-name" class="card-title text-black mt-7">
+                    Rhombus
+                  </h2>
+                  <p class="text-black">
+                    Area (A) = 0.5 x d<sub class="text-black">1</sub> x d<sub
+                      class="text-black"
+                      >2</sub
+                    >
+                  </p>
+                  <p class="text-black">
+                    d<sub class="text-black">1</sub>= 16cm , d<sub
+                      class="text-black"
+                      >2</sub
+                    >= 8cm
+                  </p>
+                  <div class="mx-auto mb-2">
+                    <input
+                      id="rhombus-first-field"
+                      type="text"
+                      placeholder="16"
+                      class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
+                    />
+                    <span class="text-black text-lg">cm</span>
+                    <input
+                      id="rhombus-second-field"
+                      type="text"
+                      placeholder="8"
+                      class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
+                    />
+                    <span class="text-black text-lg">cm</span>
+                  </div>
+                  <div class="card-actions">
+                    <button
+                      id="rhombus-btn"
+                      class="bg-blue-500 text-white md:text-xl py-2 px-8 font-bold border-none rounded-lg w-72 h-14"
+                    >
+                      Calculate
+                    </button>
+                  </div>
                 </div>
-                <div class="card-actions">
-                  <button
-                    id="ellipse-btn"
-                    class="bg-blue-500 text-white md:text-xl py-2  font-bold border-none rounded-lg  w-72 h-14"
-                  >
-                    Calculate
-                  </button>
+              </div>
+            </div>
+
+            <div id="random-pentagon" class="random">
+              <div class="card w-full bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/pentagon.png"
+                    alt="Pentagon"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 id="pentagon-name" class="card-title text-black">
+                    Pentagon
+                  </h2>
+                  <p class="text-black">Area (A) = 0.5 x p x b</p>
+                  <p class="text-black">p = 6cm , b = 10cm</p>
+                  <div class="mx-auto mb-2">
+                    <input
+                      id="pentagon-first-field"
+                      type="text"
+                      placeholder="p=6"
+                      class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
+                    />
+                    <span class="text-black text-lg">cm</span>
+                    <input
+                      id="pentagon-second-field"
+                      type="text"
+                      placeholder="b=10"
+                      class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
+                    />
+                    <span class="text-black text-lg">cm</span>
+                  </div>
+                  <div class="card-actions">
+                    <button
+                      id="pentagon-btn"
+                      class="bg-blue-500 text-white md:text-xl py-2 px-8 font-bold border-none rounded-lg w-72 h-14"
+                    >
+                      Calculate
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="random-ellipse" class="random">
+              <div class="card w-full bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img
+                    src="./images/ellipse.png"
+                    alt="Ellipse"
+                    class="rounded-xl"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 id="ellipse-name" class="card-title text-black mt-10">
+                    Ellipse
+                  </h2>
+                  <p class="text-black">Area (A) = &pi;ab</p>
+                  <p class="text-black">a = 10cm, b = 4cm</p>
+                  <div class="mx-auto mb-2">
+                    <input
+                      id="ellipse-first-field"
+                      type="text"
+                      placeholder="a=10"
+                      class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
+                    />
+                    <span class="text-black text-lg">cm</span>
+                    <input
+                      id="ellipse-second-field"
+                      type="text"
+                      placeholder="b=4"
+                      class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
+                    />
+                    <span class="text-black text-lg">cm</span>
+                  </div>
+                  <div class="card-actions">
+                    <button
+                      id="ellipse-btn"
+                      class="bg-blue-500 text-white md:text-xl py-2 font-bold border-none rounded-lg w-72 h-14"
+                    >
+                      Calculate
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-       
+
         <!-- Area calculation -->
         <div class="w-full md:w-[30%]">
           <div class="card w-full bg-base-100 shadow-xl">
-           <h2 class="text-3xl text-black underline text-center ">Area Calculation</h2>
-           <div class="">
-            <table class="table w-[90%] mx-auto ">
-              <tbody id="table-container" class="">
-
-              </tbody>
-            </table>
-          </div>
+            <h2 class="text-3xl text-black underline text-center">
+              Area Calculation
+            </h2>
+            <div class="">
+              <table class="table w-[90%] mx-auto">
+                <tbody id="table-container" class=""></tbody>
+              </table>
+            </div>
           </div>
         </div>
       </section>
     </main>
- 
+
     <!-- JavaScript -->
 
     <script src="./js/blog.js"></script>
-    
+    <script src="./js/random-color.js"></script>
     <script src="./js/utilities.js"></script>
     <script src="./js/main.js"></script>
   </body>
