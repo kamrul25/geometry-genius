@@ -51,7 +51,7 @@
 
     <main class="mt-12 mb-12">
       <section class="md:flex justify-between gap-2">
-        <div class="md:w-3/4">
+        <div class="md:w-3/5">
           <div  class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
 
             <div id="random-color" class="card w-full bg-base-100 shadow-xl">
@@ -63,18 +63,18 @@
                 />
               </figure>
               <div class="card-body items-center text-center">
-                <h2 class="card-title text-black">Triangle</h2>
+                <h2 id="triangle-name" class="card-title text-black">Triangle</h2>
                 <p class="text-black">Area (A) = 0.5 x b x h</p>
                 <div class=" mt-2 mb-2">
                   <input
-                    id="triangle-first-feild"
+                    id="triangle-first-field"
                     type="text"
                     placeholder="b"
                     class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px] "
                   />
                   <span class="text-black text-lg ">cm</span>
                   <input
-                    id="triangle-second-feild"
+                    id="triangle-second-field"
                     type="text"
                     placeholder="h"
                     class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
@@ -101,18 +101,18 @@
                 />
               </figure>
               <div class="card-body items-center text-center">
-                <h2 class="card-title text-black">Rectangle</h2>
+                <h2 id="rectangle-name" class="card-title text-black">Rectangle</h2>
                 <p class="text-black">Area (A) =  w x l</p>
                 <div class="mx-auto mt-2 mb-2">
                   <input
-                    id="rectangle-first-feild"
+                    id="rectangle-first-field"
                     type="text"
                     placeholder="w"
                     class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
                   />
                   <span class="text-black text-lg ">cm</span>
                   <input
-                    id="rectangle-second-feild"
+                    id="rectangle-second-field"
                     type="text"
                     placeholder="l"
                     class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
@@ -121,7 +121,7 @@
                 </div>
                 <div class="card-actions">
                   <button
-                    id="triangle-btn"
+                    id="rectangle-btn"
                     class="bg-blue-500 text-white md:text-xl py-2 px-8 font-bold border-none rounded-lg w-72 h-14"
                   >
                     Calculate
@@ -144,14 +144,14 @@
                 <p class="text-black">b = 10cm , <span class="text-black">h = 12cm</span></p>
                 <div class="mx-auto mt-2 mb-2">
                   <input
-                    id="parallelogram-first-feild"
+                    id="parallelogram-first-field"
                     type="text"
                     placeholder="b"
                     class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
                   />
                   <span class="text-black text-lg ">cm</span>
                   <input
-                    id="parallelogram-second-feild"
+                    id="parallelogram-second-field"
                     type="text"
                     placeholder="h"
                     class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
@@ -183,14 +183,14 @@
                 <p class="text-black">d<sub class="text-black">1</sub>= 16cm  ,  d<sub class="text-black">2</sub>= 8cm</p>
                 <div class="mx-auto mt-2 mb-2">
                   <input
-                    id="rhombus-first-feild"
+                    id="rhombus-first-field"
                     type="text"
                     placeholder="b"
                     class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
                   />
                   <span class="text-black text-lg ">cm</span>
                   <input
-                    id="rhombus-second-feild"
+                    id="rhombus-second-field"
                     type="text"
                     placeholder="h"
                     class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
@@ -222,14 +222,14 @@
                 <p class="text-black">p = 6cm , b = 10cm</p>
                 <div class="mx-auto mt-2 mb-2">
                   <input
-                    id="pentagon-first-feild"
+                    id="pentagon-first-field"
                     type="text"
                     placeholder="p"
                     class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
                   />
                   <span class="text-black text-lg ">cm</span>
                   <input
-                    id="pentagon-second-feild"
+                    id="pentagon-second-field"
                     type="text"
                     placeholder="b"
                     class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
@@ -261,14 +261,14 @@
                 <p class="text-black">a = 10cm, b = 4cm</p>
                 <div class="mx-auto mt-2 mb-2">
                   <input
-                    id="ellipse-first-feild"
+                    id="ellipse-first-field"
                     type="text"
                     placeholder="a"
                     class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
                   />
                   <span class="text-black text-lg">cm</span>
                   <input
-                    id="ellipse-second-feild"
+                    id="ellipse-second-field"
                     type="text"
                     placeholder="b"
                     class="bg-[#F1F1F1] text-black border border-white rounded px-3 py-2 w-[75px]"
@@ -289,12 +289,16 @@
         </div>
        
         <!-- Area calculation -->
-        <div class="md:w-1/4">
+        <div class="md:w-2/5">
           <div class="card w-full bg-base-100 shadow-xl">
            <h2 class="text-3xl text-black underline text-center ">Area Calculation</h2>
-           <table class="container table">
-
-           </table>
+           <div class="">
+            <table class="table w-full">
+              <tbody id="table-container">
+              
+              </tbody>
+            </table>
+          </div>
           </div>
         </div>
       </section>
